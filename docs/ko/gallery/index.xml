@@ -7,7 +7,7 @@
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Galleries on Hugo Zzo Theme</title>
-    <link>https://tomuhama.github.io/ko/gallery/</link>
+    <link>https://tomuhama.github.io/blog-tomuhama/ko/gallery/</link>
     <description>Recent content in Galleries on Hugo Zzo Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
@@ -16,17 +16,17 @@
     <copyright>©2021, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 12 Oct 2018 10:20:16 +0900</lastBuildDate>
     
-        <atom:link href="https://tomuhama.github.io/ko/gallery/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://tomuhama.github.io/blog-tomuhama/ko/gallery/index.xml" rel="self" type="application/rss+xml" />
     
 
       
       <item>
         <title>Photo</title>
-        <link>https://tomuhama.github.io/ko/gallery/photo/</link>
+        <link>https://tomuhama.github.io/blog-tomuhama/ko/gallery/photo/</link>
         <pubDate>Fri, 12 Oct 2018 10:20:16 +0900</pubDate>
         <author>zzossig@gmail.com (zzossig)</author>
         <atom:modified>Fri, 12 Oct 2018 10:20:16 +0900</atom:modified>
-        <guid>https://tomuhama.github.io/ko/gallery/photo/</guid>
+        <guid>https://tomuhama.github.io/blog-tomuhama/ko/gallery/photo/</guid>
         <description></description>
         
         <dc:creator>zzossig</dc:creator>
@@ -40,11 +40,11 @@
       
       <item>
         <title>Cartoon</title>
-        <link>https://tomuhama.github.io/ko/gallery/cartoon/</link>
+        <link>https://tomuhama.github.io/blog-tomuhama/ko/gallery/cartoon/</link>
         <pubDate>Thu, 11 Oct 2018 10:20:16 +0900</pubDate>
         <author>zzossig@gmail.com (zzossig)</author>
         <atom:modified>Thu, 11 Oct 2018 10:20:16 +0900</atom:modified>
-        <guid>https://tomuhama.github.io/ko/gallery/cartoon/</guid>
+        <guid>https://tomuhama.github.io/blog-tomuhama/ko/gallery/cartoon/</guid>
         <description></description>
         
         <dc:creator>zzossig</dc:creator>
