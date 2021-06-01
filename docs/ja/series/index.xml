@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Series on Home</title>
+    <link>https://tomuhama.github.io/blog-tomuhama/ja/series/</link>
+    <description>Recent content in Series on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://tomuhama.github.io/blog-tomuhama/ja/series/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>pymatgen</title>
+        <link>https://tomuhama.github.io/blog-tomuhama/ja/series/pymatgen/</link>
+        <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+        
+        
+        <guid>https://tomuhama.github.io/blog-tomuhama/ja/series/pymatgen/</guid>
+        <description></description>
+        
+        <dc:creator>Tomuhama</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Themes Guide</title>
+        <link>https://tomuhama.github.io/blog-tomuhama/ja/series/themes-guide/</link>
+        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
+        
+        
+        <guid>https://tomuhama.github.io/blog-tomuhama/ja/series/themes-guide/</guid>
+        <description></description>
+        
+        <dc:creator>Tomuhama</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

@@ -6,37 +6,16 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Series on Hugo Zzo Theme</title>
+    <title>Series on Home</title>
     <link>https://tomuhama.github.io/blog-tomuhama/en/series/</link>
-    <description>Recent content in Series on Hugo Zzo Theme</description>
+    <description>Recent content in Series on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>zzossig@gmail.com (zzossig)</managingEditor>
-    <webMaster>zzossig@gmail.com (zzossig)</webMaster>
     <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 20 Dec 2019 12:00:06 +0900</lastBuildDate>
     
         <atom:link href="https://tomuhama.github.io/blog-tomuhama/en/series/index.xml" rel="self" type="application/rss+xml" />
     
 
-      
-      <item>
-        <title>Themes Guide</title>
-        <link>https://tomuhama.github.io/blog-tomuhama/en/series/themes-guide/</link>
-        <pubDate>Fri, 20 Dec 2019 12:00:06 +0900</pubDate>
-        <author>zzossig@gmail.com (zzossig)</author>
-        
-        <guid>https://tomuhama.github.io/blog-tomuhama/en/series/themes-guide/</guid>
-        <description></description>
-        
-        <dc:creator>zzossig</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
       
 
     

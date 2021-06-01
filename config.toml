@@ -1,5 +1,5 @@
 baseURL = "https://tomuhama.github.io/blog-tomuhama/"
-title = "Hugo Zzo Theme"
+title = "Home"
 theme = "zzo"
 
 publishDir = "docs"

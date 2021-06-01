@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>linux on Home</title>
+    <link>https://tomuhama.github.io/blog-tomuhama/ja/categories/linux/</link>
+    <description>Recent content in linux on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>©2021, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://tomuhama.github.io/blog-tomuhama/ja/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Linuxのメモ</title>
+        <link>https://tomuhama.github.io/blog-tomuhama/ja/posts/linux/</link>
+        <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+        
+        <atom:modified>Tue, 01 Jun 2021 00:00:00 +0000</atom:modified>
+        <guid>https://tomuhama.github.io/blog-tomuhama/ja/posts/linux/</guid>
+        <description>概要 Linuxコマンドに一向に慣れないので覚えるため・わかんなくなった時にすぐに参照できるようにメモしておく場所。あと普通に知らなかったこと</description>
+        
+        <dc:creator>tomuhama</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>linux</category>
+            
+          
+        
+        
+          
+            
+              <category>linux</category>
+            
+          
+        
+        
+          
+            
+          
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+[[main]]
+  identifier = "about"
+  name = "About"
+  url = "about"
+  weight = 1
+
+[[main]]
+  identifier = "archive"
+  name = "アーカイブ"
+  url = "archive"
+  weight = 2
+
+#[[main]]
+#  identifier = "gallery"
+#  name = "ギャラリー"
+#  url = "gallery"
+#  weight = 3
+    
+#[[main]]
+#  parent = "gallery"
+#  name = "Cartoon"
+#  url = "gallery/cartoon"
+
+#[[main]]
+#  parent = "gallery"
+#  name = "Photo"
+#  url = "gallery/photo"
+
+[[main]]
+  identifier = "posts"
+  name = "投稿"
+  url = "posts"
+  weight = 3
