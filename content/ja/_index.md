@@ -27,7 +27,7 @@ header:
     title:
       - tomuhama's blog
     subtitle:
-      - memo
+      - 備忘録
     titleColor: 
     titleShadow: true
     titleFontSize: 44

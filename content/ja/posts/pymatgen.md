@@ -1,6 +1,6 @@
 ---
 title: "pymatgenの使い方(1)"
-date: 2021-06-01
+date: 2021-06-02
 description: "Materials Projectのデータをpymatgenを用いて引っ張ってきたい時に"
 draft: false
 hideToc: false

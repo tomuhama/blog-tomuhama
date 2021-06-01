@@ -12,11 +12,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://tomuhama.github.io/blog-tomuhama/ja/categories/index.xml" rel="self" type="application/rss+xml" />
     
 
+      
+      <item>
+        <title>materials informatics</title>
+        <link>https://tomuhama.github.io/blog-tomuhama/ja/categories/materials-informatics/</link>
+        <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
+        
+        
+        <guid>https://tomuhama.github.io/blog-tomuhama/ja/categories/materials-informatics/</guid>
+        <description></description>
+        
+        <dc:creator>Tomuhama</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
       
       <item>
         <title>latex</title>
@@ -43,24 +61,6 @@
         
         
         <guid>https://tomuhama.github.io/blog-tomuhama/ja/categories/linux/</guid>
-        <description></description>
-        
-        <dc:creator>Tomuhama</dc:creator>
-        
-        
-        
-        
-        
-        
-      </item>
-      
-      <item>
-        <title>materials informatics</title>
-        <link>https://tomuhama.github.io/blog-tomuhama/ja/categories/materials-informatics/</link>
-        <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
-        
-        
-        <guid>https://tomuhama.github.io/blog-tomuhama/ja/categories/materials-informatics/</guid>
         <description></description>
         
         <dc:creator>Tomuhama</dc:creator>

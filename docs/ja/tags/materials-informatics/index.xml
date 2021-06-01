@@ -12,7 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>©2021, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://tomuhama.github.io/blog-tomuhama/ja/tags/materials-informatics/index.xml" rel="self" type="application/rss+xml" />
     
@@ -21,9 +21,9 @@
       <item>
         <title>pymatgenの使い方(1)</title>
         <link>https://tomuhama.github.io/blog-tomuhama/ja/posts/pymatgen/</link>
-        <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+        <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
         
-        <atom:modified>Tue, 01 Jun 2021 00:00:00 +0000</atom:modified>
+        <atom:modified>Wed, 02 Jun 2021 00:00:00 +0000</atom:modified>
         <guid>https://tomuhama.github.io/blog-tomuhama/ja/posts/pymatgen/</guid>
         <description>MathJax.Hub.Config({ tex2jax: { inlineMath: [[&#39;$&#39;, &#39;$&#39;] ], displayMath: [ [&#39;$$&#39;,&#39;$$&#39;], [&#34;\\[&#34;,&#34;\\]&#34;] ] } }); 概要 Materials Projectの概要は次。これら12から引用。 物質材料の第一原理計算結果のデータベース。結晶構造、バンド構</description>
         
