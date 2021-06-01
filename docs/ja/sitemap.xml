@@ -15,6 +15,19 @@
                 href="https://tomuhama.github.io/blog-tomuhama/ja/"
                 />
   </url><url>
+    <loc>https://tomuhama.github.io/blog-tomuhama/ja/about/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tomuhama.github.io/blog-tomuhama/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://tomuhama.github.io/blog-tomuhama/ja/about/"
+                />
+  </url><url>
     <loc>https://tomuhama.github.io/blog-tomuhama/ja/categories/</loc>
     <lastmod>2021-06-01T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -90,123 +103,8 @@
                 href="https://tomuhama.github.io/blog-tomuhama/ja/tags/"
                 />
   </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/tags/shortcode/</loc>
-    <lastmod>2020-01-25T06:40:51+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/posts/shortcodes/</loc>
-    <lastmod>2020-01-25T06:40:51+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/tags/css/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/tags/html/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/tags/markdown/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/posts/markdown-syntax/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/categories/syntax/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/tags/themes/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/categories/themes/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/series/themes-guide/</loc>
-    <lastmod>2019-12-20T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/tags/privacy/</loc>
-    <lastmod>2019-12-19T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/posts/rich-content/</loc>
-    <lastmod>2019-12-19T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/tags/shortcodes/</loc>
-    <lastmod>2019-12-19T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/tags/hugo/</loc>
-    <lastmod>2019-12-18T10:33:41+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/categories/hugo/</loc>
-    <lastmod>2019-12-18T10:33:41+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/posts/syntax-highlight/</loc>
-    <lastmod>2019-12-18T10:33:41+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/posts/math-typesetting/</loc>
-    <lastmod>2019-12-17T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/tags/amoji/</loc>
-    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/tags/bamoji/</loc>
-    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/tags/emoji/</loc>
-    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/posts/emoji-support/</loc>
-    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/tags/gamoji/</loc>
-    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/tags/namoji/</loc>
-    <lastmod>2019-12-16T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/categories/diagram/</loc>
-    <lastmod>2019-11-18T21:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/posts/test-viz/</loc>
-    <lastmod>2019-11-18T21:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/posts/test-wavedrom/</loc>
-    <lastmod>2019-11-18T18:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/posts/test-chartjs/</loc>
-    <lastmod>2019-11-18T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/posts/test-js-sequence-diagrams/</loc>
-    <lastmod>2019-11-18T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/tags/diagram/</loc>
-    <lastmod>2019-11-17T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/posts/test-mermaid/</loc>
-    <lastmod>2019-11-17T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/categories/math/</loc>
-    <lastmod>2019-11-16T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/posts/test-mathjax/</loc>
-    <lastmod>2019-11-16T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/posts/test-katex/</loc>
-    <lastmod>2019-11-15T12:00:06+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/posts/test-flowchart/</loc>
-    <lastmod>2019-11-14T12:00:06+09:00</lastmod>
-  </url><url>
     <loc>https://tomuhama.github.io/blog-tomuhama/ja/archive/</loc>
     <lastmod>2019-10-19T11:44:14+09:00</lastmod>
-  </url><url>
-    <loc>https://tomuhama.github.io/blog-tomuhama/ja/about/</loc>
-    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tomuhama.github.io/blog-tomuhama/en/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://tomuhama.github.io/blog-tomuhama/ja/about/"
-                />
   </url><url>
     <loc>https://tomuhama.github.io/blog-tomuhama/ja/tags/index/</loc>
   </url>
