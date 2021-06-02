@@ -12,4 +12,6 @@ date = "2021-06-01"
 icon : https://picrew.me/image_maker/268253
 Twitter : https://twitter.com/tomu__hama
 
+なの君が作った今日のウンメェ : https://shindanmaker.com/940334
+
 

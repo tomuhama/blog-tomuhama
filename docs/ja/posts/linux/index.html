@@ -1951,6 +1951,31 @@ convert test.<span class="o">{</span>png,jpg<span class="o">}</span>
 <li><code>!!</code>：引数を含む直前のコマンド全体。よくあるパターンは権限がなかっただけでコマンドを実行できなかったときで、sudo !!と打てばそのコマンドをsudoで速やかに再実行できる。</li>
 <li><code>$_</code>：直前のコマンドの最後の引数。もしインタラクティブシェルを使っているなら、<code>$_</code>を使わずとも、Escからの.と打てばすぐにこの値を取得できる。</li>
 </ul>
+<h2 id="scp">scp</h2>
+<p>configにサーバーが登録してある場合。</p>
+<ul>
+<li>サーバーからローカルに移動</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">scp server_name:/home/tomuhama/hosii.file /path/to/local/
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>ローカルからサーバーへアップロード</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">scp /path/to/local/okuru_file server_name:/home/tomuhama/
+</code></pre></td></tr></table>
+</div>
+</div><p>もしディレクトリを送る場合は<code>scp -r</code></p>
 <div class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
@@ -2302,6 +2327,13 @@ convert test.<span class="o">{</span>png,jpg<span class="o">}</span>
     <div class="grow"></div>
 <nav class="pagination-single">
   
+    
+      <a href="https://tomuhama.github.io/blog-tomuhama/ja/posts/python/" class="pagination-single__left">
+        <div class="pagination-single__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
+        </div>
+        <div class="pagination-single__left-title">Pythonのメモ</div>      
+      </a>
     
     <div class="grow"></div>
     
@@ -2676,6 +2708,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <li><a href="#画像の拡張子の変換">画像の拡張子の変換</a></li>
     <li><a href="#との違い">&lsquo;と&quot;の違い</a></li>
     <li><a href="#特別な変数">特別な変数</a></li>
+    <li><a href="#scp">scp</a></li>
   </ul>
 </nav>
   </div>
