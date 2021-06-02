@@ -16,7 +16,7 @@ series:
 -
 categories:
 - 日常
-image: 
+image: https://m.media-amazon.com/images/I/51a6spIQypL.jpg
 ---
 
 ## 百合姫に載りました
