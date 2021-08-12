@@ -46,7 +46,7 @@ image:
 
 ## 使い方
 
-pymatgenをインストールしてない人はpipでインストール。
+pymatgenをインストールしてない人はpipでインストール。今回は最近出たver2021.2.8.1についての説明。
 ```Python
 pip install pymatgen
 ```
@@ -103,7 +103,7 @@ Al2O3 = mp.query(criteria={"task_id":"mp-1143"}, properties=["band_gap", "cif", 
   'cif': "# generated using pymatgen\ndata_Al2O3\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   5.17795525\n_cell_length_b   5.17795525\n_cell_length_c   5.17795522\n_cell_angle_alpha   55.28961179\n_cell_angle_beta   55.28961179\n_cell_angle_gamma   55.28961598\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Al2O3\n_chemical_formula_sum   'Al4 O6'\n_cell_volume   87.42003700\n_cell_formula_units_Z   2\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Al  Al0  1  0.14790400  0.14790400  0.14790400  1\n  Al  Al1  1  0.35209600  0.35209600  0.35209600  1\n  Al  Al2  1  0.64790400  0.64790400  0.64790400  1\n  Al  Al3  1  0.85209600  0.85209600  0.85209600  1\n  O  O4  1  0.55614600  0.94385400  0.25000000  1\n  O  O5  1  0.75000000  0.44385400  0.05614600  1\n  O  O6  1  0.25000000  0.55614600  0.94385400  1\n  O  O7  1  0.94385400  0.25000000  0.55614600  1\n  O  O8  1  0.05614600  0.75000000  0.44385400  1\n  O  O9  1  0.44385400  0.05614600  0.75000000  1\n", 
   'elasticity': {'G_Reuss': 145.0, 'G_VRH': 147.0, 'G_Voigt': 149.0, 'G_Voigt_Reuss_Hill': 147.0, 'K_Reuss': 232.0, 'K_VRH': 232.0, 'K_Voigt': 232.0, 'K_Voigt_Reuss_Hill': 232.0, 'elastic_anisotropy': 0.16, 'elastic_tensor': [[452.0, 150.0, 107.0, 20.0, 0.0, 0.0], [150.0, 452.0, 107.0, -20.0, 0.0, 0.0], [107.0, 107.0, 454.0, 0.0, 0.0, 0.0], [20.0, -20.0, 0.0, 132.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 132.0, 20.0], [0.0, 0.0, 0.0, 0.0, 20.0, 151.0]], 'homogeneous_poisson': 0.24, 'poisson_ratio': 0.24, 'universal_anisotropy': 0.16, 'elastic_tensor_original': [[452.88438075058264, 149.32230924280603, 107.84796496254714, -20.10675793699231, 0.0, 0.0], [148.62120151839645, 453.5170195225491, 107.90847433611715, 20.173114161264873, 0.0, 0.0], [106.9405661066039, 106.94049665460224, 454.3703632383968, 0.0, 0.0, 0.0], [-20.86619534535896, 19.832316552076684, -0.17929756761829355, 131.71960640208465, 0.0, 0.0], [-0.0013251095003368445, -0.015841534176974235, -0.0003537556433960988, 0.012846932839122636, 131.7651980776287, -20.304943009508005], [-1.4040031587713696e-05, -1.1880019661839212e-05, 2.6599853168491205e-06, -1.9746683263811934e-05, -20.3341646730955, 149.8292238793223]], 'compliance_tensor': [[2.6, -0.8, -0.4, -0.5, -0.0, -0.0], [-0.8, 2.6, -0.4, 0.5, 0.0, -0.0], [-0.4, -0.4, 2.4, -0.0, -0.0, 0.0], [-0.5, 0.5, -0.0, 7.8, -0.0, 0.0], [-0.0, 0.0, -0.0, -0.0, 7.8, -1.0], [-0.0, -0.0, 0.0, 0.0, -1.0, 6.8]], 'warnings': [], 'nsites': 10}}]
 ```
-最後に.cifで保存してVestaで見てみる。
+最後に.cifで保存してVesta[^vesta]で見てみる。
 ```Python
 with open("al2o3.cif", "r") as f:
     f.write(Al2O3[0]["cif"])
@@ -119,3 +119,5 @@ with open("al2o3.cif", "r") as f:
 [^qiita]: [Materials Projectのクエリ機能を使用して所望の計算材料データを大量に取得する。](https://qiita.com/qmiyajun/items/543cdf6e5d13d297953a)
 
 [^pymatgen]: [Python Materials Genomics (pymatgen): A robust, open-source python library for materials analysis](https://www.sciencedirect.com/science/article/abs/pii/S0927025612006295)
+
+[^vesta]: [K. Momma and F. Izumi, "VESTA 3 for three-dimensional visualization of crystal, volumetric and morphology data," _J. Appl. Crystallogr._, 44, 1272-1276 (2011).](http://scripts.iucr.org/cgi-bin/paper?S0021889811038970)
