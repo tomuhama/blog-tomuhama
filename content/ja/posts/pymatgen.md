@@ -42,7 +42,7 @@ image:
 登録しなくても引っ張ってこれる情報はあるが、当然物足りないので登録して沢山情報を持ってこれるようにする。
 
 1. 普通に登録する。[公式サイト](https://www.materialsproject.org/)のLoginのところから登録できる。
-1. 登録ができたら[ここ](https://materialsproject.org/open)を開く。意味わからん文字列があるのでそれがAPI KEYです。
+1. 登録ができたら[ここ](https://materialsproject.org/open)を開く。API keysの項目にハイライトされてる文字列があなたのAPI_KEYです。
 
 ## 使い方
 
@@ -51,21 +51,21 @@ pymatgenをインストールしてない人はpipでインストール。今回
 pip install pymatgen
 ```
 
-まず、登録したAPI_KEYを使ってMPResterのオブジェクトを作成。
+まず、登録したAPI_KEYを使ってMPResterオブジェクトを作成。
 ```Python
 from pymatgen import MPRester
 
 MY_API_KEY="API_KEY"
 mp = MPRester(MY_API_KEY)
 ```
-と思ったけど書き方変わったみたいでキレてる。普通に先月くらいまではこの書き方でちゃんと動いてたんですけどねぇ...(2021/06/01現在)。次のように書きます。
+と思ったけど書き方変わったみたいでキレてる。普通に前verだとこの書き方でちゃんと動いてたんですけどねぇ...次のように書きます。
 ```Python
 from pymatgen.ext.matproj import MPRester
 
 MY_API_KEY="API_KEY"
 mp = MPRester(MY_API_KEY)
 ```
-あとはmpを使って適宜呼び出し。様々に呼び出せる方法はあるが、最も簡易的な、番号から呼び出す方法を書く。
+あとはmpを使って適宜呼び出し。様々に呼び出せる方法はあるが、最も簡易的な、idから呼び出す方法は次。
 ```Python
 >>> structure = mp.get_structure_by_material_id("mp-1143")
 >>> print(structure)
@@ -87,7 +87,7 @@ Sites (10)
   8  O     0.056146  0.75      0.443854        -0
   9  O     0.443854  0.056146  0.75            -0
 ```
-これでstructureが取り出せる。ここでは$\textrm{Al}_2\textrm{O}_3$をとってきた。structureだけでも結構な情報がとってこれる。`dir(structure)`で調べればわかるが、superlatticeを作れたりもするし、replace methodを使えば特定の元素を別の元素に交換できる。
+これでstructureが取り出せる。structureはpymatgenのpymatgen.core.structure.Structureオブジェクトであり、周期的な構造を定義するときに使う。非周期的な分子の場合はMoleculeオブジェクトを用いるらしい(自分は使ったことはない)。ここでは$\textrm{Al}_2\textrm{O}_3$をとってきた。structureだけでも結構な情報がとってこれる。`dir(structure)`で調べればわかるが、superlatticeを作れたりもするし、replace methodを使えば特定の元素を別の元素に交換できる。
 構造以外の情報を引き出すためには、次のように書く。
 ```Python
 Al2O3 = mp.query(criteria={"element":{"task_id":"mp-1143"}}, properties=["band_gap", "cif", "elasticity"])
@@ -96,7 +96,7 @@ Al2O3 = mp.query(criteria={"element":{"task_id":"mp-1143"}}, properties=["band_g
 ```Python
 Al2O3 = mp.query(criteria={"task_id":"mp-1143"}, properties=["band_gap", "cif", "elasticity"])
 ```
-`criteria`では材料の条件を指定する。ここではtask_idで指定したが、例えば「O元素を2つ含む構造」など指定して情報を取り出すこともできる。structureはデフォルトで引き出せるので問題ない。また、propertiesは取得したい物性を指定する。propertiesで引数にできる値は[ここ](https://github.com/materialsproject/mapidoc/tree/master/materials)に全て載っている。今回の場合は、バンドギャップやcifファイルの形式、elasticityの情報を含んだオブジェクトが作られる。ちなみにprintすると直接情報が入ったリストが出てくる。
+`criteria`では材料の条件を指定する。ここではtask_idで指定したが、例えば「O元素を2つ含む構造」など指定して情報を取り出すこともできる。また、propertiesは取得したい物性を指定する。propertiesで引数にできる値は[ここ](https://github.com/materialsproject/mapidoc/tree/master/materials)に全て載っている。今回の場合は、バンドギャップやcifファイルの形式、elasticityの情報を含んだリストが返ってくる。printすると直接情報が入ったリストが出てくる。
 ちなみにAl2O3はこうなってる。今回は1つしかないが、criteriaに複数の材料が当てはまる場合はそれぞれの情報がdict型で返ってくる。
 ```Python
 [{'band_gap': 6.043599999999999, 
@@ -111,7 +111,9 @@ with open("al2o3.cif", "r") as f:
 
 ![Al2O3](../images/al2o3.png)
 
-終わり。こういう感じでしか使ったことないけどフォノンバンドとかも取得できるし相図も引っ張ってこれるらしいので次回以降(あるのか？)やる。
+終わり。ただpymatgenのcifのIOは個人的には信用していない。以前Materials Projectから引っ張ってきた構造を書き出してそれを再度読み込んで可視化したら全然違う構造になっていた。
+
+自分はpymatgenをこういう感じでしか使ったことないけどフォノンバンドとかも取得できるし相図も引っ張ってこれるらしいので次回以降(あるのか？)やる。
 
 
 [^issp]: [pymatgenを使ったMaterials Projectのデータ収集](https://ma.issp.u-tokyo.ac.jp/app-post/2331)

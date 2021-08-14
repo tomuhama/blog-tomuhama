@@ -1727,7 +1727,7 @@
 <p>登録しなくても引っ張ってこれる情報はあるが、当然物足りないので登録して沢山情報を持ってこれるようにする。</p>
 <ol>
 <li>普通に登録する。<a href="https://www.materialsproject.org/">公式サイト</a>のLoginのところから登録できる。</li>
-<li>登録ができたら<a href="https://materialsproject.org/open">ここ</a>を開く。意味わからん文字列があるのでそれがAPI KEYです。</li>
+<li>登録ができたら<a href="https://materialsproject.org/open">ここ</a>を開く。API keysの項目にハイライトされてる文字列があなたのAPI_KEYです。</li>
 </ol>
 <h2 id="使い方">使い方</h2>
 <p>pymatgenをインストールしてない人はpipでインストール。今回は最近出たver2021.2.8.1についての説明。</p>
@@ -1739,7 +1739,7 @@
 <pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">pip</span> <span class="n">install</span> <span class="n">pymatgen</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>まず、登録したAPI_KEYを使ってMPResterのオブジェクトを作成。</p>
+</div><p>まず、登録したAPI_KEYを使ってMPResterオブジェクトを作成。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1754,7 +1754,7 @@
 <span class="n">mp</span> <span class="o">=</span> <span class="n">MPRester</span><span class="p">(</span><span class="n">MY_API_KEY</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>と思ったけど書き方変わったみたいでキレてる。普通に先月くらいまではこの書き方でちゃんと動いてたんですけどねぇ&hellip;(2021/06/01現在)。次のように書きます。</p>
+</div><p>と思ったけど書き方変わったみたいでキレてる。普通に前verだとこの書き方でちゃんと動いてたんですけどねぇ&hellip;次のように書きます。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1769,7 +1769,7 @@
 <span class="n">mp</span> <span class="o">=</span> <span class="n">MPRester</span><span class="p">(</span><span class="n">MY_API_KEY</span><span class="p">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>あとはmpを使って適宜呼び出し。様々に呼び出せる方法はあるが、最も簡易的な、番号から呼び出す方法を書く。</p>
+</div><p>あとはmpを使って適宜呼び出し。様々に呼び出せる方法はあるが、最も簡易的な、idから呼び出す方法は次。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -1814,7 +1814,7 @@
   <span class="mi">9</span>  <span class="n">O</span>     <span class="mf">0.443854</span>  <span class="mf">0.056146</span>  <span class="mf">0.75</span>            <span class="o">-</span><span class="mi">0</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>これでstructureが取り出せる。ここでは$\textrm{Al}_2\textrm{O}_3$をとってきた。structureだけでも結構な情報がとってこれる。<code>dir(structure)</code>で調べればわかるが、superlatticeを作れたりもするし、replace methodを使えば特定の元素を別の元素に交換できる。<br />
+</div><p>これでstructureが取り出せる。structureはpymatgenのpymatgen.core.structure.Structureオブジェクトであり、周期的な構造を定義するときに使う。非周期的な分子の場合はMoleculeオブジェクトを用いるらしい(自分は使ったことはない)。ここでは$\textrm{Al}_2\textrm{O}_3$をとってきた。structureだけでも結構な情報がとってこれる。<code>dir(structure)</code>で調べればわかるが、superlatticeを作れたりもするし、replace methodを使えば特定の元素を別の元素に交換できる。<br />
 構造以外の情報を引き出すためには、次のように書く。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1833,7 +1833,7 @@
 <pre class="chroma"><code class="language-Python" data-lang="Python"><span class="n">Al2O3</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">criteria</span><span class="o">=</span><span class="p">{</span><span class="s2">&#34;task_id&#34;</span><span class="p">:</span><span class="s2">&#34;mp-1143&#34;</span><span class="p">},</span> <span class="n">properties</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;band_gap&#34;</span><span class="p">,</span> <span class="s2">&#34;cif&#34;</span><span class="p">,</span> <span class="s2">&#34;elasticity&#34;</span><span class="p">])</span>
 </code></pre></td></tr></table>
 </div>
-</div><p><code>criteria</code>では材料の条件を指定する。ここではtask_idで指定したが、例えば「O元素を2つ含む構造」など指定して情報を取り出すこともできる。structureはデフォルトで引き出せるので問題ない。また、propertiesは取得したい物性を指定する。propertiesで引数にできる値は<a href="https://github.com/materialsproject/mapidoc/tree/master/materials">ここ</a>に全て載っている。今回の場合は、バンドギャップやcifファイルの形式、elasticityの情報を含んだオブジェクトが作られる。ちなみにprintすると直接情報が入ったリストが出てくる。<br />
+</div><p><code>criteria</code>では材料の条件を指定する。ここではtask_idで指定したが、例えば「O元素を2つ含む構造」など指定して情報を取り出すこともできる。また、propertiesは取得したい物性を指定する。propertiesで引数にできる値は<a href="https://github.com/materialsproject/mapidoc/tree/master/materials">ここ</a>に全て載っている。今回の場合は、バンドギャップやcifファイルの形式、elasticityの情報を含んだリストが返ってくる。printすると直接情報が入ったリストが出てくる。<br />
 ちなみにAl2O3はこうなってる。今回は1つしかないが、criteriaに複数の材料が当てはまる場合はそれぞれの情報がdict型で返ってくる。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1859,7 +1859,8 @@
 </code></pre></td></tr></table>
 </div>
 </div><p><img src="../images/al2o3.png" alt="Al2O3" /></p>
-<p>終わり。こういう感じでしか使ったことないけどフォノンバンドとかも取得できるし相図も引っ張ってこれるらしいので次回以降(あるのか？)やる。</p>
+<p>終わり。ただpymatgenのcifのIOは個人的には信用していない。以前Materials Projectから引っ張ってきた構造を書き出してそれを再度読み込んで可視化したら全然違う構造になっていた。</p>
+<p>自分はpymatgenをこういう感じでしか使ったことないけどフォノンバンドとかも取得できるし相図も引っ張ってこれるらしいので次回以降(あるのか？)やる。</p>
 <div class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
